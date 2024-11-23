@@ -22,8 +22,8 @@ This is my solution to the [Social Links Profile Challenge on Frontend Mentor](h
 
 ### Links
 
-- [Solution Repository](https://github.com/wiceldric75/social-links-profile) 
-- [Live Demo](https://wiceldric75.github.io/social-links-profile/)
+- [Solution Repository](https://github.com/wiceldric75/social_links_profile) 
+- [Live Demo](https://wiceldric75.github.io/social_links_profile/)
 
 ## My Process
 - **Setup**: Structured the project with semantic HTML5 and external CSS, importing the "Inter" font via Google Fonts.
