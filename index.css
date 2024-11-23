@@ -1,0 +1,253 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-grey-900, #141414);
+  color: var(--color-grey-900);
+  line-height: 1.5;
+}
+
+/* Color Variables */
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+}
+
+/* Spacing Variables */
+:root {
+  --spacing-50: 0.25rem; /* 4px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-500: 2.5rem;
+}
+
+/* Typography Variables */
+:root {
+  --font-family-inter: "Inter", sans-serif;
+
+  /* Font Sizes */
+  --font-size-100: 0.875rem; /* 14px */
+  --font-size-200: 1rem; /* 16px */
+  --font-size-300: 1.5rem; /* 24px */
+
+  /* Line Heights */
+  --line-height-150: 1.5; /* 150% */
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Letter Spacing */
+  --letter-spacing-none: 0px;
+}
+
+/* Typography Presets */
+:root {
+  --preset-1-font: var(--font-family-inter);
+  --preset-1-font-size: var(--font-size-300);
+  --preset-1-line-height: var(--line-height-150);
+  --preset-1-font-weight: var(--font-weight-bold);
+  --preset-1-letter-spacing: var(--letter-spacing-none);
+
+  --preset-2-font: var(--font-family-inter);
+  --preset-2-font-size: var(--font-size-200);
+  --preset-2-line-height: var(--line-height-150);
+  --preset-2-font-weight: var(--font-weight-semibold);
+  --preset-2-letter-spacing: var(--letter-spacing-none);
+
+  --preset-3-font: var(--font-family-inter);
+  --preset-3-font-size: var(--font-size-100);
+  --preset-3-line-height: var(--line-height-150);
+  --preset-3-font-weight: var(--font-weight-regular);
+  --preset-3-letter-spacing: var(--letter-spacing-none);
+}
+
+/* Utility Classes for Text */
+.text-preset-1 {
+  font-family: var(--preset-1-font);
+  font-size: var(--preset-1-font-size);
+  line-height: var(--preset-1-line-height);
+  font-weight: var(--preset-1-font-weight);
+  letter-spacing: var(--preset-1-letter-spacing);
+}
+
+.text-preset-2 {
+  font-family: var(--preset-2-font);
+  font-size: var(--preset-2-font-size);
+  line-height: var(--preset-2-line-height);
+  font-weight: var(--preset-2-font-weight);
+  letter-spacing: var(--preset-2-letter-spacing);
+}
+
+.text-preset-3 {
+  font-family: var(--preset-3-font);
+  font-size: var(--preset-3-font-size);
+  line-height: var(--preset-3-line-height);
+  font-weight: var(--preset-3-font-weight);
+  letter-spacing: var(--preset-3-letter-spacing);
+}
+
+/* Basic Layout */
+main {
+  display: flex;
+  width: 327px;
+  height: 812px;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  background: var(--color-grey-900, #141414);
+  margin: auto;
+}
+
+section {
+  display: flex;
+  padding: var(--spacing-300, 24px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300, 24px);
+  flex: 1 0 0;
+  border-radius: var(--spacing-150, 12px);
+  background: var(--color-grey-800, #1f1f1f);
+}
+figure div {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  background: url(./assets/images/avatar-jessica.jpeg) lightgray 50% / cover
+    no-repeat;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-50, 4px);
+  align-self: stretch;
+}
+h1 {
+  color: var(--color-white, #fff);
+  text-align: center;
+
+  /* text-preset-1 */
+  font-family: Inter;
+  font-size: var(--font-size-text-preset-1, 24px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+}
+p {
+  color: var(--color-green, #c4f82a);
+  text-align: center;
+
+  /* text-preset-2-bold */
+  font-family: Inter;
+  font-size: var(--font-size-text-preset-2, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+}
+blockquote {
+  color: var(--color-white, #fff);
+  text-align: center;
+
+  /* text-preset-2 */
+  font-family: Inter;
+  font-size: var(--font-size-text-preset-2, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+nav {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200, 16px);
+  align-self: stretch;
+  width: 100%;
+  padding: 0; /* Remove any inherent padding */
+  margin: 0; /* Ensure no additional margin from <ul> */
+  list-style: none;
+}
+li {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding: var(--spacing-150, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  align-self: stretch;
+  border-radius: var(--spacing-100, 8px);
+  background: var(--color-grey-700, #333);
+
+  color: var(--color-white, #fff);
+
+  /* text-preset-2-bold */
+  font-family: Inter;
+  font-size: var(--font-size-text-preset-2, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+  color: #ffffff;
+}
+
+li a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherit the color from the parent (li) */
+  width: 100%; /* Ensures the link fills the li */
+  text-align: center; /* Center-align the text */
+  display: block; /* Allows the link to behave like a block element */
+}
+/* Reset all li styles to default unless hovered or focused */
+li {
+  background: var(--color-grey-700, #333);
+  color: var(--color-white, #fff);
+}
+
+/* Apply hover and focus styles */
+li:hover,
+li:focus-within {
+  background: var(--color-green, #c4f82a);
+  color: #333333;
+}
+
+/* Ensure only one element at a time gets the treatment */
+li:not(:hover):not(:focus-within) {
+  background: var(--color-grey-700, #333);
+  color: var(--color-white, #fff);
+}
+
+a:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-green, #c4f82a);
+  border-radius: var(--spacing-100, 8px); /* Match the li style */
+}
+/* Tablet styles */
+@media (min-width: 768px) {
+  main {
+    width: 456px; /* Desktop layout */
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    width: 384px; /* Desktop layout */
+  }
+}
