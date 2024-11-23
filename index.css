@@ -105,7 +105,7 @@ body {
 /* Basic Layout */
 main {
   display: flex;
-  width: 327px;
+  width: 375px;
   height: 812px;
   padding: 0px 24px;
   justify-content: center;
@@ -244,11 +244,19 @@ a:focus {
 /* Tablet styles */
 @media (min-width: 768px) {
   main {
-    width: 456px; /* Desktop layout */
+    width: 768px;
+    height: 1024px;
+  }
+  section {
+    max-width: 456px;
   }
 }
 @media (min-width: 1024px) {
   main {
-    width: 384px; /* Desktop layout */
+    width: 1440px;;
+    height: 960px;
+  }
+  section {
+    max-width: 384px;;
   }
 }
