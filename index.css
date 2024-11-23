@@ -220,6 +220,7 @@ li a {
 li {
   background: var(--color-grey-700, #333);
   color: var(--color-white, #fff);
+  transition: background-color 0.75s ease, color 0.25s ease;
 }
 
 /* Apply hover and focus styles */
