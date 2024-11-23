@@ -246,6 +246,7 @@ a:focus {
   main {
     width: 768px;
     height: 1024px;
+    padding: var(--spacing-500, 40px);
   }
   section {
     max-width: 456px;
@@ -257,6 +258,6 @@ a:focus {
     height: 960px;
   }
   section {
-    max-width: 384px;;
+    max-width: 384px;
   }
 }
