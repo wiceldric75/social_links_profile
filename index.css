@@ -65,7 +65,7 @@ body {
   --preset-1-letter-spacing: var(--letter-spacing-none);
 
   --preset-2-font: var(--font-family-inter);
-  --preset-2-font-size: var(--font-size-200);
+  --preset-2-font-size: var(--font-size-100);
   --preset-2-line-height: var(--line-height-150);
   --preset-2-font-weight: var(--font-weight-semibold);
   --preset-2-letter-spacing: var(--letter-spacing-none);
@@ -144,7 +144,7 @@ h1 {
 
   /* text-preset-1 */
   font-family: Inter;
-  font-size: var(--font-size-text-preset-1, 24px);
+  font-size: var(--preset-1-font-size, 24px);
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 36px */
@@ -155,7 +155,7 @@ p {
 
   /* text-preset-2-bold */
   font-family: Inter;
-  font-size: var(--font-size-text-preset-2, 14px);
+  font-size: var(--preset-2-font-size, 14px);
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 21px */
